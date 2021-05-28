@@ -1,0 +1,10 @@
+<img src="http://localhost:8090/{{book.image}}" height="200px" width="150px">
+<div>
+<h3>Title: {{book.name}}</h3>
+<p>Author: {{book.author}}</p><br>
+<p>Price: {{book.price}}</p>  
+
+<p *ngFor = "let book of content.description">
+    {{book}} <br>
+</p>
+</div> 
