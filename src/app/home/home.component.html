@@ -1,4 +1,5 @@
 <div class="jumbotron">
 <h2>The chapel of Books</h2>
 <p>We have a large variety collection of books. Name it we have it.</p>
-<app-book-display *ngFor = "let book of books" [element] = 'book'></app-book-display>
+</div>
+<app-booklist *ngFor = "let x of books" [book] = x></app-booklist>

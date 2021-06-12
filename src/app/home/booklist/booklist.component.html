@@ -1,0 +1,12 @@
+<a routerLink = "home/{{book.id}}">
+    <div>
+        <ul>
+            <li class="box" style="box-shadow: rgba(0, 0, 0, 0.623) 10px;">
+                <img src="{{book.image}}" style="width: 200px; height: 300px; margin-left: 20px;" >
+               <p style="width: 250px;" ><strong>Title</strong> : {{book.name}}<br>
+                <strong>Author</strong> : {{book.author}}<br>
+                <strong>Price</strong> : $<strong>{{book.price}}</strong></p>
+            </li>
+        </ul>
+    </div>
+</a>

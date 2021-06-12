@@ -8,15 +8,16 @@ import { BooksService } from '../services/books.service';
 })
 export class HomeComponent implements OnInit {
 title = "Bookchor";
-
-  constructor(private bs:BooksService) { }
-  books:[]=[];
-
-  ngOnInit(): void {
+books:any;
+  constructor(private bs:BooksService) { 
     this.bs.getBooks().subscribe(
-      (data)=>this.books=data,
-      ()=>this.books=[]
+      (data) => {
+        this.books = data;
+      }
     )
   }
+  
+
+  ngOnInit(): void { }
 
 }

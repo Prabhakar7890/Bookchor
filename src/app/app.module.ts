@@ -8,8 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
-import { BookContentComponent } from './home/book-content/book-content.component';
-import { BookDisplayComponent } from './home/book-display/book-display.component';
+import { BooksService } from './services/books.service';
+import { BooklistComponent } from './home/booklist/booklist.component';
+import { BookDetailsComponent } from './home/book-details/book-details.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +19,15 @@ import { BookDisplayComponent } from './home/book-display/book-display.component
     AboutusComponent,
     ContactComponent,
     HeaderComponent,
-    BookContentComponent,
-    BookDisplayComponent
+    BooklistComponent,
+    BookDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
