@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { BooksService } from './services/books.service';
 import { BooklistComponent } from './home/booklist/booklist.component';
 import { BookDetailsComponent } from './home/book-details/book-details.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BookDetailsComponent } from './home/book-details/book-details.component
     ContactComponent,
     HeaderComponent,
     BooklistComponent,
-    BookDetailsComponent
+    BookDetailsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
